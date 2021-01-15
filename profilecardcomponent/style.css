@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+/* @media screen (max-width: 375px;){
+
+} */
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body{
+  background-image: 
+  url(./images/bg-pattern-top.svg),  
+  url(./images/bg-pattern-bottom.svg);
+  background-position: -22rem -27rem, 27rem 20rem;
+  background-repeat: no-repeat;
+  background-color: hsl(185, 75%, 39%);
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 1.8rem;
+}
+.container{
+  padding-top: 10%;
+}
+.card {
+  width: 340px;
+  padding: center;
+  margin: auto;
+  background-color: white;  
+  border-radius: 1.5rem; 
+  border-style: none;
+}
+.card-body{
+    padding:0%;
+}
+.card-bottom{
+    margin: 0rem;
+
+}
+.col{
+    justify-content: center;
+    padding: 1rem;
+}
+img{
+  object-position: 50% 50%;  
+  margin: 0.5rem;
+  border: solid 0.5rem white;
+}
+.location{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+.name, .card-bottom{
+  font-size: 1rem;
+}
+.name, .age{
+    display: inline-block;
+    padding-top: 20%;
+    font-size: 1rem;
+}
+.w700{
+  font-weight: 700;
+}
+.w400{
+  font-weight: 400;
+  font-size: 0.7rem;
+}    
+p{
+    margin: auto;
+}
+.photo{
+  background-image: url(./images/bg-pattern-card.svg);
+  border-top-left-radius : 1rem;
+  border-top-right-radius : 1rem;
+  border-style: none;
+}
+.positioned{
+    position: relative;
+    top:4.5rem;  
+}

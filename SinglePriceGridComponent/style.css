@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+@media all and (min-width:376px){
+    .bottom{
+        display: flex;
+        flex-flow: row wrap;
+    }
+}
+
+@media all and (max-width:375px){
+    .container{
+        width: 300px;
+        margin-top: 72px;
+    }
+    .top, .bottom-left, .bottom-right{
+        width: 250px;
+    }
+}
+
+@media all and (max-width:640px){
+    .container{
+        width: 320px;
+        margin-top: 84px;
+    }
+    .top, .bottom-left, .bottom-right{
+        width: 270px;
+    }
+}
+
+
+/* Global settings */
+body{  
+    background:hsl(204, 43%, 93%);
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    line-height: 1;
+    color:white;
+    margin:0px;
+    padding: 0px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+/* Main container settings */
+.container{
+    box-shadow: 2px 2px 40px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    line-height: 1.5rem;
+    display: flex;
+    flex-flow: row wrap;
+    overflow: hidden;
+    max-width: 640px;
+    max-height: 870px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 162px;
+    margin-bottom: auto;
+    overflow: hidden;
+    justify-content: center;
+}
+
+/* Top side */
+.top{
+    background-color: white;
+    min-width: 250px;
+    min-height: 166px;
+    padding: 25px;
+}
+.top h1{
+    color: hsl(179, 62%, 43%);
+    font-weight: 700;
+    font-size: 24px;
+}
+.top-p1{
+    color: hsl(71, 73%, 54%);
+    font-weight: 700;
+}
+.top-p2{
+    color:hsl(218, 22%, 67%);
+}
+
+/* Bottom side */
+.bottom{
+    min-width: 300px;
+    min-height: 260px;
+    flex-wrap: column wrap;
+}
+
+h2{
+    font-size: 18px;
+    font-weight: 700;
+}
+/* Bottom left */
+.bottom-left{
+    background-color: hsl(179, 62%, 43%);
+    padding: 25px;
+    min-width: 270px;
+    min-height: 166px;
+}
+
+.bottom-left-p1{
+    font-size: 28px;
+    line-height: 33px;    
+    font-weight: 700;
+}
+.bottom-left-p1 span{
+    font-size: 16px;
+    font-weight: 200;
+    opacity: 0.5;
+    vertical-align: middle;
+    color: hsl(0,0,100,0.5);
+}
+
+.bottom-left a{
+    text-decoration: none;  
+    color: white;
+    display: flex;
+    text-decoration: none;  
+    background-color: hsl(71, 73%, 54%);
+    border: none;
+    justify-content: center;
+    box-shadow: 8px 8px 16px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    width: 100%;
+    transition: ease 0.5s;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-top: 24px;
+}
+
+/* Bottom right */
+
+.bottom-right{
+    background-color: hsl(179, 62%, 43%,.75);
+    padding: 25px;
+    min-width: 270px;
+    min-height: 166px;   
+}
+
+ul{
+    vertical-align: middle;
+    padding: 0;
+}
+
+ul li{
+    list-style-type: none;
+    font-size: 14px;
+}
+
+/* Footer content settings */
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
