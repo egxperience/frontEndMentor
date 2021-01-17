@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
 
-@media all and (min-width:720px){
+
+@media all and (min-width:680px){
     body{
         background-image: 
         url(./images/bg-pattern-top-desktop.svg),  
@@ -31,13 +32,35 @@
         float:left;
     }
 
-    .reviews, .reportguru, .besttech{
-        width: 75%;
+    .rating p{
+        font-size: 1rem;
     }
 
-    .card{
-        margin: 1rem;
-        padding: 1rem;
+    .reviews{
+        margin-right: 6rem!important;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .reportguru{
+        margin-left: 3rem!important;
+        margin-right: 3rem!important;
+    }
+
+    .besttech{
+        margin-left: 6rem!important;
+    }
+
+    .card:nth-child(1){
+        margin-bottom: auto;
+    }
+    .card:nth-child(2){
+        margin-top: 3rem;
+        margin-bottom: auto;
+    }
+    .card:nth-child(3){
+        margin-top: 5rem;
+        margin-bottom: auto;
     }
 }
 
@@ -86,19 +109,39 @@ body{
 
 .rating{
     font-weight: 700;
-    margin-right: auto;
-    margin-left: auto;
     align-items: center;
 }
 
 .reviews, .reportguru, .besttech{
-    line-height: 1.5;
     margin: 8px;
     padding: 8px;
     background-color: hsl(300, 24%, 96%);
     border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    line-height: 1;
 }
 
+.reviews span{
+    margin-right: 1rem;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+.rating p{
+    margin-left: 8px;
+}
+
+.reviews:hover{
+    box-shadow:2px 2px 8px hsl(303, 10%, 53%); 
+}
+.reportguru:hover{
+    box-shadow:2px 2px 8px hsl(303, 10%, 53%); 
+}
+.besttech:hover{
+    box-shadow:2px 2px 8px hsl(303, 10%, 53%); 
+}
 /* Bottom // Opinion section */
 
 /* Client card settings */
@@ -106,9 +149,13 @@ body{
     background-color: hsl(300, 43%, 22%);
     border-radius: 8px;
     margin: 1rem;
-    padding: 2rem;
+    padding: 1.5rem;
     overflow: hidden;
     position: relative;
+}
+
+.card:hover{
+    box-shadow:4px 8px 24px hsl(303, 10%, 53%); 
 }
 
 .user{
