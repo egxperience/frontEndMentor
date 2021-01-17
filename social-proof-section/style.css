@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+@media all and (min-width:720px){
+    body{
+        background-image: 
+        url(./images/bg-pattern-top-desktop.svg),  
+        url(./images/bg-pattern-bottom-desktop.svg);
+    }
+
+    .top {
+        display: flex;
+        flex-wrap: column wrap;
+    }
+
+    .opinion{
+        display: flex;
+        flex-wrap: column wrap;
+        align-items: stretch;
+    }
+
+    .call{
+        width: 50%;
+    }
+
+    .rating{
+        width: 50%;
+        text-align: left;
+    }
+
+    .rating img {
+        float:left;
+    }
+
+    .reviews, .reportguru, .besttech{
+        width: 75%;
+    }
+
+    .card{
+        margin: 1rem;
+        padding: 1rem;
+    }
+}
+
+*{
+    font-family: 'Spartan', sans-serif;
+    font-size: 15px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    align-items: center;
+}
+body{
+    background-color: hsl(0, 0%, 100%);
+    background-image: 
+    url(./images/bg-pattern-top-mobile.svg),  
+    url(./images/bg-pattern-bottom-mobile.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: left top, right bottom;
+}
+
+/* Container settings */
+.container{
+    display: flex;
+    flex-flow: row wrap;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10%;
+}
+
+/* Top section */
+.top{
+    color: hsl(300, 43%, 22%);
+    text-align: center;
+}
+
+.call{   
+    margin-left: auto;
+    margin-right: auto;
+}
+.call h1{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.rating{
+    font-weight: 700;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+}
+
+.reviews, .reportguru, .besttech{
+    line-height: 1.5;
+    margin: 8px;
+    padding: 8px;
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 8px;
+}
+
+/* Bottom // Opinion section */
+
+/* Client card settings */
+.card{
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 8px;
+    margin: 1rem;
+    padding: 2rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.user{
+    flex-direction: row;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.card img{
+    border-radius: 50%;
+    height: 45px;
+    float: left;
+    margin-right: 1rem;
+}
+
+.user p{
+    font-size: 0.9rem;
+    color: hsl(333, 80%, 67%);
+}
+
+.user h2, .quote{
+    font-size: 0.9rem;
+    color: hsl(0, 0%, 100%);
+    opacity: 75%;
+}
+
+/* Footer section */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
