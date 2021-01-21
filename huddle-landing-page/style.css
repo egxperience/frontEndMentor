@@ -82,11 +82,16 @@ body{
 .fab{
     height: auto;
     color:#fff;
-    width: 1rem;
-    padding: 0.5rem;
+    width: 0.8rem;
+    padding: 0.8rem;
     margin: auto;
     border-radius: 50%;
     border: 1px solid #fff;
+}
+
+.fab:hover{
+    color: hsl(300, 69%, 71%);
+    border: 1px solid hsl(300, 69%, 71%);
 }
 
 /* Footer section */
