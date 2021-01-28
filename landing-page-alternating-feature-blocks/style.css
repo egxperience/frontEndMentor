@@ -1,0 +1,133 @@
+/* General settings */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    background-image: url(./images/bg-hero-mobile.svg);
+    background-color: hsl(193, 100%, 96%);
+    background-repeat: no-repeat;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+body a{
+    text-decoration: none;
+}
+
+.container{
+    display: flex;
+    flex-flow: column wrap;
+    width:75%;
+    margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 8px;
+    justify-content: center;
+    align-content: center;
+}
+
+/* TOP section */
+
+.header img{
+    height: 1rem;
+    width: auto;
+}
+
+.banner {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    text-align: center;
+    color: hsl(192, 100%, 9%,0.75);
+    
+}
+.banner h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 27px;
+    font-weight: 600;
+}
+
+.btn-try{
+    border-radius: 16px;
+    padding: 4px;
+    margin: 4px;
+    width: 96px;
+    box-shadow: 1px 1px 8px hsl(208, 11%, 55%,0.5);
+    color: hsl(192, 100%, 9%);
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-align: center;
+    float: right;
+}
+.mockup img{
+    height: auto;
+    width: 100%;
+}
+
+.btn-start{
+    background-color: hsl(322, 100%, 66%);
+    border-radius: 27px;
+    padding: 9px;
+    margin: 9px;
+    width: 180px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8rem;
+    color: #fff;
+}
+
+/* CONTENT section */
+.content, .bottom{
+    background-color: #fff;
+}
+.content h3{
+    color:  hsl(192, 100%, 9%);
+}
+
+.content img{
+    height: 240px;
+    width: auto;
+    float:left;
+    }
+
+.content p{
+    color: hsl(208, 11%, 55%);
+}
+
+.grow, .flow, .users{
+    border-radius: 16px;
+    box-shadow: 1px 1px 16px hsl(208, 11%, 55%,0.25);
+}
+
+/* FOOTER section */
+footer{
+    background-color: hsl(192, 100%, 9%);
+    color:#fff;
+}
+
+footer ul>li{
+    list-style-type: none;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+/* font-family: 'Poppins', sans-serif; 
+font-family: 'Open Sans', sans-serif;
+*/
+
+@media all and (min-width:640px){
+    body{
+        background-image: url(./images/bg-hero-desktop.svg);
+    }
+
+    .container{
+        max-width:1120px;
+    }
+    
+    .content img{
+    height: 360px;
+    width: auto;
+    }
+}

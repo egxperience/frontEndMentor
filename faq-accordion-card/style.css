@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 12px;
+    background: linear-gradient(
+        hsl(273, 75%, 66%),
+        hsl(240, 73%, 65%));
+    /* background-repeat: no-repeat; */
+    min-height: 100vh;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;   
+    border-radius: 1.5rem;
+    background-repeat: no-repeat;
+    margin-top: 10rem;
+    margin-right: auto;
+    margin-left: auto;
+    width: 85%;
+    justify-content: center;
+    align-content: center;
+}
+
+/* TOP section */
+.top img{
+    width: auto;
+    height: 100%;
+}
+
+/* Mobile logo settings */
+.mobile-logo{
+    display: flex;
+    position: relative;
+    text-align: center;
+}
+
+/* Desktop logo settings */
+.desktop-logo{
+    display: none;
+}
+
+/* QUESTIONS section */
+
+.questions{
+    padding: 1.5rem;  
+}
+
+h1{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.question-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.question-text{
+    line-height: 1.5;
+}
+
+.question-arrow {
+    cursor: pointer;
+    border: none;
+    background-color: #fff;
+}
+
+.arrow-up {
+    transform: rotate(180deg);
+}
+
+/* HIDE text */
+.question-text {
+    display: none;
+}
+
+.show-text .question-title {
+    font-weight: 700;
+}
+
+.show-text .question-text {
+    display: block;
+}
+.arrow-up {
+    display: none;
+}
+.show-text .arrow-up {
+    display: inline;
+}
+.show-text .arrow-down {
+    display: none;
+}
+
+.underline{
+    border-bottom: 1px solid hsl(240, 5%, 91%);
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    margin-top: 2rem; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media all and (min-width:640px){
+    .container{
+        /* max-width: 840px; */
+        flex-direction: row;
+    }
+    
+    /* Desktop logo settings */
+    .desktop-logo{
+        display: flex;
+    }
+
+    /* Mobile logo settings */
+    .mobile-logo{
+        display: none;
+    }
+}
