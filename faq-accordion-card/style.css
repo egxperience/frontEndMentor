@@ -136,6 +136,7 @@ h1{
 
 .show-text .question-title {
     font-weight: 700;
+    color: var(--soft-red);
 }
 
 .show-text .question-text {
